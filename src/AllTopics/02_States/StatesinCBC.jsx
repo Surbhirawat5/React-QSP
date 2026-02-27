@@ -12,6 +12,18 @@ class StatesInCBC extends Component {
         });
     };
 
+    decrement = () => {
+        this.setState((prev) => {
+            if (this.state.Count > 0) {
+            return {Count : prev.Count - 1};
+            }
+        });
+    };
+
+    reset = () => {
+        this.setState({Count : 0})
+    }
+
     render() {
         console.log(this);
         
@@ -20,6 +32,7 @@ class StatesInCBC extends Component {
                 <h1>States in CBC</h1>
                 <h2>Counter : {this.state.Count}</h2>
                 <button onClick={this.increment}>Increment</button>
+                
             </>
         );
     };
