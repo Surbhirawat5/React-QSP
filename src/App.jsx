@@ -23,6 +23,8 @@ import StatesInFBC from "./AllTopics/02_States/StatesinFBC";
 import ThemeChange from "./AllTopics/02_States/ThemeChange";    
 import Counter from "./AllTopics/02_States/Counter";
 import StateTask1 from "./AllTopics/02_States/StatesTask1";
+import StatesInCBC from "./AllTopics/02_States/StatesinCBC";
+
 
 const App = () => {
     return (
@@ -34,7 +36,9 @@ const App = () => {
             {/* <ThemeChange/> */}
             {/* <Counter/> */}
 
-            <StateTask1/>
+            {/* <StateTask1/> */}
+
+            <StatesInCBC/>
 
         </>
     );

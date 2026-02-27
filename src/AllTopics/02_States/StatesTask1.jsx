@@ -12,7 +12,7 @@ const StateTask1 = () => {
                </button>
 
 
-            {toggle && 
+            {toggle && (
             <>
                 <ul>
                     <li>HTML</li>
@@ -21,7 +21,7 @@ const StateTask1 = () => {
                     <li>REACT.JS</li>
                 </ul>
             </>  
-            }
+            )}
 
            
         </>
