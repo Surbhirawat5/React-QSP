@@ -35,13 +35,14 @@ const App = () => {
             <StatesInFBC/> */}
 
             {/* <ThemeChange/> */}
-            <Counter/>
+            
+            {/* <Counter/> */}
 
             {/* <StateTask1/> */}
 
             {/* <StatesInCBC/> */}
 
-            {/* <PropsParent/> */}
+            <PropsParent/>
 
         </>
     );

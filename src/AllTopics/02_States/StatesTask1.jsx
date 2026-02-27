@@ -21,7 +21,7 @@ const StateTask1 = () => {
                     <li>REACT.JS</li>
                 </ul>
             </>  
-            )}
+            )};
 
            
         </>
