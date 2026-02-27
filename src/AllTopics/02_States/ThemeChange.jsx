@@ -6,6 +6,7 @@ const ThemeChange = () => {
 
     const handleTheme = () => {
         console.log("Theme Changed");
+        
         setTheme((prev) => (prev === "dark" ? "light" : "dark"));
 
         document.body.style.backgroundColor = theme === "dark" ? "black" : "white";

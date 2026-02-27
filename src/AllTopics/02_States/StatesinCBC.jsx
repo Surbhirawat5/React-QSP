@@ -32,6 +32,8 @@ class StatesInCBC extends Component {
                 <h1>States in CBC</h1>
                 <h2>Counter : {this.state.Count}</h2>
                 <button onClick={this.increment}>Increment</button>
+                <button onClick={this.decrement}>decrement</button>
+                <button onClick={this.reset}>reset</button>
                 
             </>
         );

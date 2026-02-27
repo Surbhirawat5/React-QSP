@@ -7,7 +7,7 @@ class ClassBased extends Component {
                 <h1>I Am ClassBased Component</h1>
             </>
         );
-    }
-}
+    };
+};
 
-export default ClassBased
+export default ClassBased;

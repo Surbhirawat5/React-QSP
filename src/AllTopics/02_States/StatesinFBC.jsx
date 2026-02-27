@@ -25,7 +25,7 @@ const StatesInFBC = () => {
             <h2>{data}</h2>
             <button onClick={handleBtn}>update</button>
 
-            <hr />
+            <hr/>
             <button onClick={handleCartBtn}> {cart} </button>
         </>
     );
