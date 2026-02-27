@@ -22,6 +22,7 @@ import ClassBased from "./AllTopics/01_TypesOfComponents/ClassBased";
 import StatesInFBC from "./AllTopics/02_States/StatesinFBC";
 import ThemeChange from "./AllTopics/02_States/ThemeChange";    
 import Counter from "./AllTopics/02_States/Counter";
+import StateTask1 from "./AllTopics/02_States/StatesTask1";
 
 const App = () => {
     return (
@@ -31,7 +32,10 @@ const App = () => {
             <StatesInFBC/> */}
 
             {/* <ThemeChange/> */}
-            <Counter/>
+            {/* <Counter/> */}
+
+            <StateTask1/>
+
         </>
     );
 };
