@@ -9,7 +9,7 @@
 //             <h2>{greet}</h2>
 
 //             <HeaderComp/>
-//         </>
+//         </>   
 //     );
 // };
 // export default App;
@@ -30,8 +30,8 @@ import PropsParent from "./AllTopics/03_Props/PropsParent";
 const App = () => {
     return (
         <>
-            {/* <FunctionBased/>
-            <ClassBased/>
+            <FunctionBased/>
+            {/* <ClassBased/>
             <StatesInFBC/> */}
 
             {/* <ThemeChange/> */}
@@ -41,7 +41,7 @@ const App = () => {
 
             {/* <StatesInCBC/> */}
 
-            <PropsParent/>
+            {/* <PropsParent/> */}
 
         </>
     );

@@ -3,7 +3,9 @@ const PropsChild = (props) => {
     
     return (
         <div>
-            <h1>Props Child  {props.data1} </h1>
+            <h1>Props Child</h1>
+            <h2>{props.x.data1}</h2>
+            <h2>{props.x.data2}</h2>
         </div>
     );
 };
