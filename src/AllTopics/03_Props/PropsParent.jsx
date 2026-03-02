@@ -1,15 +1,40 @@
+import { useState } from "react";
 import PropsChild from "./PropsChild";
+import PropsChild2 from "./PropsChild2";
+import PropsChild3 from "./PropsChild3";
 
 const PropsParent = () => {
-    let data1 = "Hii";
-    let data2 = [10, 20, 30];
+  const [value, setValue] = useState("");
 
-    return (
-        <div>
-            <h1>Props Parent</h1>
+  let data1 = "Hello WOrld";
+  let data2 = [10, 20, 30];
+  let data3 = { firstname: "John" };
 
-            <PropsChild x = {{data1, data2}} />
-        </div>
-    );
+  function greet(val) {
+    console.log("Welcome", val);
+    setValue(`Welcome ${val}`);
+  }
+
+  return (
+    <div>
+      <h1>PropsParent : {value} </h1>
+
+      <hr />
+
+      {/* Sending multiple props */}
+      <PropsChild value1={data1} value2={data2} value3={data3} />
+
+      <hr />
+
+      {/* Sending multiple data in single prop */}
+      <PropsChild2 value={{ data1, data2, data3 }} />
+
+      <hr />
+
+      {/* Receive data from Child to Parent */}
+      <PropsChild3 greet={greet} />
+    </div>
+  );
 };
+
 export default PropsParent;
