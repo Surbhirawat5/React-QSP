@@ -2,14 +2,14 @@
 
 import React from 'react'
 
-// const ChildrenProps2 = (Props) =>{
+// const ChildrenProps2 = (Props) =>{      //Yeh old way hai props lene ka.
     // console.log(Props);
     const ChildrenProps2 = ({children}) => {
     
   return (
     <div>
         <h1>ChildrenProps2</h1>
-        {/* props.children; */}
+        {/* props.children;                Agar destructuring nahi karte to likhte: */}
         {children}
     </div>
   )

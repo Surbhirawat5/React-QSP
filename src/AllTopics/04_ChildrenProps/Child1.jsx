@@ -1,11 +1,26 @@
 import React from 'react'
 
-const Child2 = () => {
+const Child1 = () => {
   return (
     <div>
-        <h2>Child2</h2>
+        <h2>Child1</h2>
     </div>
   )
 }
 
-export default Child2;
+export default Child1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

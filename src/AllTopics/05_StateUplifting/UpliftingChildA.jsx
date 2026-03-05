@@ -1,8 +1,8 @@
 import React from 'react'
 
 const UpliftingChildA = ({count}) => {
-    // const UpliftingChildB = (props) => {
-  // console.log(props); //{count:0}
+    // const UpliftingChildA = (props) => {
+  // console.log(props.count); //{count:0}
   // let {count} = props;
   
 
