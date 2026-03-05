@@ -25,6 +25,12 @@ import Counter from "./AllTopics/02_States/Counter";
 import StateTask1 from "./AllTopics/02_States/StatesTask1";
 import StatesInCBC from "./AllTopics/02_States/StatesinCBC";
 import PropsParent from "./AllTopics/03_Props/PropsParent";
+import ChildrenProps from "./AllTopics/04_ChildrenProps/ChildrenProps";
+import ChildrenProps2 from "./AllTopics/04_ChildrenProps/ChildrenProps2";
+import Child1 from "./AllTopics/04_ChildrenProps/Child2";
+import Child2 from "./AllTopics/04_ChildrenProps/Child1";
+import UpliftingParent from "./AllTopics/05_StateUplifting/UpliftingParent";
+import DrillingParent from "./AllTopics/06_PropsDrilling/DrilingParent";
 
 
 const App = () => {
@@ -42,7 +48,19 @@ const App = () => {
 
             {/* <StatesInCBC/> */}
 
-            <PropsParent/>
+            {/* <PropsParent/> */}
+
+            <ChildrenProps/>
+
+            <ChildrenProps2>
+                <Child1/>
+                <Child2/>
+            </ChildrenProps2>
+
+            <UpliftingParent/>
+
+            <DrillingParent/>
+
 
         </>
     );
