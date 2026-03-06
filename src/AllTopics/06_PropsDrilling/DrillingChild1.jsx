@@ -11,3 +11,4 @@ function DrillingChild1({ str, setData}) {
 };
 
 export default DrillingChild1;
+
