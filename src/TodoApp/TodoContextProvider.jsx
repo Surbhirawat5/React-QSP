@@ -6,30 +6,30 @@ const TodoContextProvider = (props) => {
   const [newTodo, setNewTodo] = useState("");
   const [todos, setAllTodos] = useState([{ id: 1, text: "Default Todo" }]);
 
-
   const addTodo = (e) => {
     e.preventDefault();
     console.log(newTodo);
 
-    if(newTodo.trim() === "") {
+    if (newTodo.trim() === "") {
       alert("No Todo Available");
       setNewTodo("");
       return;
-    };
+    }
 
     let todo = {
       id: Date.now(),
       text: newTodo.trim(),
     };
     console.log(todo);
-    
+
+    //used for previous value
+    setAllTodos((prev) => [...prev, todo]);
 
     //clear input field
-    setNewTodo("")
+    setNewTodo("");
   };
 
   const removeTodo = () => {};
-
 
   return (
     <todoContext.Provider

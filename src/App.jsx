@@ -39,7 +39,6 @@ import TodoWrapper from "./TodoApp/TodoWrapper";
 import CreateTodo from "./TodoApp/CreateTodo";
 import AllTodos from "./TodoApp/AllTodos";
 import TodoContextProvider from "./TodoApp/TodoContextProvider";
- 
 
 const App = () => {
   return (
@@ -80,7 +79,7 @@ const App = () => {
       {/* <ControlledForm2/> */}
 
       <TodoContextProvider>
-         <TodoWrapper />
+        <TodoWrapper />
       </TodoContextProvider>
     </>
   );
