@@ -9,18 +9,17 @@
 //             <h2>{greet}</h2>
 
 //             <HeaderComp/>
-//         </>   
+//         </>
 //     );
 // };
 // export default App;
 
-
 //! belongs to FunctionBased and  ClassBased and StatesInFBC and so on
 
 import FunctionBased from "./AllTopics/01_TypesOfComponents/FunctionBased";
-import ClassBased from "./AllTopics/01_TypesOfComponents/ClassBased";   
+import ClassBased from "./AllTopics/01_TypesOfComponents/ClassBased";
 import StatesInFBC from "./AllTopics/02_States/StatesinFBC";
-import ThemeChange from "./AllTopics/02_States/ThemeChange";    
+import ThemeChange from "./AllTopics/02_States/ThemeChange";
 import Counter from "./AllTopics/02_States/Counter";
 import StateTask1 from "./AllTopics/02_States/StatesTask1";
 import StatesInCBC from "./AllTopics/02_States/StatesinCBC";
@@ -39,27 +38,27 @@ import ControlledForm2 from "./AllTopics/08_Forms/ControlledForm2";
 import TodoWrapper from "./TodoApp/TodoWrapper";
 import CreateTodo from "./TodoApp/CreateTodo";
 import AllTodos from "./TodoApp/AllTodos";
-
+import TodoContextProvider from "./TodoApp/TodoContextProvider";
+ 
 
 const App = () => {
-    return (
-        <>
-            {/* <FunctionBased/>
+  return (
+    <>
+      {/* <FunctionBased/>
             <ClassBased/>
             <StatesInFBC/> */}
 
-            {/* <ThemeChange/> */}
-            
-            {/* <Counter/> */}
+      {/* <ThemeChange/> */}
 
-            {/* <StateTask1/> */}
+      {/* <Counter/> */}
 
-            {/* <StatesInCBC/> */}
+      {/* <StateTask1/> */}
 
-            {/* <PropsParent/> */}
+      {/* <StatesInCBC/> */}
 
+      {/* <PropsParent/> */}
 
-            {/* <ChildrenProps/>
+      {/* <ChildrenProps/>
 
             <ChildrenProps2>
                 <Child1/>
@@ -70,27 +69,20 @@ const App = () => {
 
             <DrillingParent/> */}
 
-
-          {/* <ContextProvider>
+      {/* <ContextProvider>
             <ContextParent/>
           </ContextProvider> */}
-            
-           
-           {/* <ControlledForms1/> */}
 
-           {/* <Task1/> */}
+      {/* <ControlledForms1/> */}
 
-           {/* <ControlledForm2/> */}
+      {/* <Task1/> */}
 
-           <TodoWrapper/>
-                
+      {/* <ControlledForm2/> */}
 
-
-        </>
-    );
+      <TodoContextProvider>
+         <TodoWrapper />
+      </TodoContextProvider>
+    </>
+  );
 };
 export default App;
-
-
-
-

@@ -5,7 +5,7 @@ import AllTodos from './AllTodos';
 const TodoWrapper = () => {
   return (
     <div>
-        <h1>TodoWrapper</h1>
+        
         <CreateTodo/>
         <AllTodos/>
 
