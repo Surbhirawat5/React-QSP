@@ -20,6 +20,10 @@
 
 import { createRoot } from "react-dom/client";
 import App from "./App";
+
+// Global CSS
+import "./index.css"
+
 createRoot(document.getElementById("root")).render(<App/>);            // it is React way
 // createRoot(document.getElementById("root")).render(App());               // it is Javascript way
                                     
