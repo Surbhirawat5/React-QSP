@@ -40,6 +40,8 @@ import CreateTodo from "./TodoApp/CreateTodo";
 import AllTodos from "./TodoApp/AllTodos";
 import TodoContextProvider from "./TodoApp/TodoContextProvider";
 import ReactCss from "./AllTopics/09_ReactCss/ReactCss";
+import TailwindPractice1 from "./AllTopics/10_TailwindCss/TailwindPractice1";
+import UncontrolledForm from "./AllTopics/08_Forms/UncontrolledForm";
 
 const App = () => {
   return (
@@ -85,7 +87,10 @@ const App = () => {
       </TodoContextProvider> */}
 
 
-      <ReactCss/>
+      {/* <ReactCss/> */}
+
+      {/* <TailwindPractice1/> */}
+      <UncontrolledForm/>
     </>
   );
 };
