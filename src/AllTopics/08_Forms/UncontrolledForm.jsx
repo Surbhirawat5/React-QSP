@@ -16,7 +16,6 @@ const UncontrolledForm = () => {
             password : passwordRef.current.value
         };
         console.log(user);
-        
     };
 
 
