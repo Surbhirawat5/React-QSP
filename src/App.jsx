@@ -45,6 +45,8 @@ import UncontrolledForm from "./AllTopics/08_Forms/UncontrolledForm";
 import LifeCycleInCbc from "./AllTopics/11_Life_Cycle/LifeCycleInCBC";
 import { useState } from "react";
 import LifeCycleInFbc from "./AllTopics/11_Life_Cycle/LifeCycleInFbc";
+import Todos from "./AllTopics/12_Fetch/Todos";
+import Products from "./AllTopics/12_Fetch/Products";
 
 const App = () => {
 
@@ -106,7 +108,11 @@ const App = () => {
       {toggle && <LifeCycleInCbc/>} */}
 
 
-      <LifeCycleInFbc/>  
+      {/* <LifeCycleInFbc/>   */}
+
+      {/* <Todos/> */}
+      
+      <Products/>
 
     </>
   );
