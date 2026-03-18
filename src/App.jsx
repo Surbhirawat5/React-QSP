@@ -118,10 +118,10 @@ const App = () => {
       {/* <Products/> */}
 
       {/* <ReducerCounter/> */}
-      <ReducerCounterObject/>
+      {/* <ReducerCounterObject/> */}
 
 
-      {/* <Users/> */}
+      <Users/>
 
     </>
   );

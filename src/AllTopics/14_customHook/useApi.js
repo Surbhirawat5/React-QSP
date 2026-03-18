@@ -19,8 +19,8 @@ export const useApi  = (url) => {
     }
 
     useEffect(()=>{
-        getApiData()
-    },[url])
+        getApiData();
+    },[url]);
 
     return {apiData, loading};
 };
