@@ -11,6 +11,8 @@ export const useApi  = (url) => {
             let resp = await fetch(url);
             let data = await resp.json();
             setApiData(data); 
+            console.log(data.users);
+            
         } catch (error) {
             console.log(error.response);
         } finally {
