@@ -50,6 +50,8 @@ import Products from "./AllTopics/12_Fetch/Products";
 import ReducerCounter from "./AllTopics/13_Reducer/ReducerCounter";
 import Users from "./AllTopics/14_customHook/Users";
 import ReducerCounterObject from "./AllTopics/13_Reducer/ReducerCounterObject";
+import MemoExample from "./AllTopics/15_MemoAndCallback/MemoExample";
+import Dashboard from "./AllTopics/16_Routing/Dashboard";
 
 const App = () => {
 
@@ -120,9 +122,11 @@ const App = () => {
       {/* <ReducerCounter/> */}
       {/* <ReducerCounterObject/> */}
 
+      {/* <Users/> */}
 
-      <Users/>
+      {/* <MemoExample/> */}
 
+      <Dashboard/>
     </>
   );
 };
