@@ -52,6 +52,7 @@ import Users from "./AllTopics/14_customHook/Users";
 import ReducerCounterObject from "./AllTopics/13_Reducer/ReducerCounterObject";
 import MemoExample from "./AllTopics/15_MemoAndCallback/MemoExample";
 import Dashboard from "./AllTopics/16_Routing/Dashboard";
+import ParentHoc from "./AllTopics/17_Hoc/ParentHoc";
 
 const App = () => {
 
@@ -122,11 +123,14 @@ const App = () => {
       {/* <ReducerCounter/> */}
       {/* <ReducerCounterObject/> */}
 
-      <Users/>
+      {/* <Users/> */}
 
       {/* <MemoExample/> */}
 
-      {/* <Dashboard/> */}
+      <Dashboard/>
+
+      {/* <ParentHoc/>   */}
+
     </>
   );
 };
