@@ -28,16 +28,15 @@ const Nav = () => {
           className={({ isActive }) =>
             `${isActive && "bg-white text-black"} transition ease-in py-1 px-3 rounded`
           }
-          to="/"
-        >
+          to="/">
           Home
         </NavLink>
+
         <NavLink
           className={({ isActive }) =>
             `${isActive && "bg-white text-black"} transition ease-in py-1 px-3 rounded`
           }
-          to="/about"
-        >
+          to="/about">
           About
         </NavLink>
 
@@ -45,8 +44,7 @@ const Nav = () => {
           className={({ isActive }) =>
             `${isActive && "bg-white text-black"} transition ease-in py-1 px-3 rounded`
           }
-          to="/contact"
-        >
+          to="/contact">
           Contact
         </NavLink>
 
