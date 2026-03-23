@@ -9,6 +9,7 @@ const About = () => {
         voluptate reprehenderit nesciunt laboriosam! Impedit dignissimos iure
         quasi enim veniam asperiores eligendi amet. Obcaecati, doloremque. Odio.
       </p>
+      
     </div>
   );
 };

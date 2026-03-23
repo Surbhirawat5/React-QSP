@@ -5,6 +5,7 @@ const NotFound = () => {
     <div className='h-screen grid place-items-center text-5xl'>
         <span>🫣 Oops....</span>
         <Link to="/">Back to home</Link>
+
     </div>
     
   );
