@@ -26,28 +26,21 @@ const Nav = () => {
 
         <NavLink
           className={({ isActive }) =>
-            `${isActive && "bg-white text-black"} transition ease-in py-1 px-3 rounded`
-          }
-          to="/">
+            `${isActive && "bg-white text-black"} transition ease-in py-1 px-3 rounded`} to="/">
           Home
         </NavLink>
 
         <NavLink
           className={({ isActive }) =>
-            `${isActive && "bg-white text-black"} transition ease-in py-1 px-3 rounded`
-          }
-          to="/about">
+            `${isActive && "bg-white text-black"} transition ease-in py-1 px-3 rounded`} to="/about">
           About
         </NavLink>
 
         <NavLink
           className={({ isActive }) =>
-            `${isActive && "bg-white text-black"} transition ease-in py-1 px-3 rounded`
-          }
-          to="/contact">
+            `${isActive && "bg-white text-black"} transition ease-in py-1 px-3 rounded`} to="/contact">
           Contact
         </NavLink>
-
 
       </nav>
     </header>
