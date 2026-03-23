@@ -3,6 +3,7 @@ import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 import Layout from "./Layout";
+import NotFound from "./NotFound";
 
 
 const myRoutes = createBrowserRouter([
@@ -23,6 +24,11 @@ const myRoutes = createBrowserRouter([
             {
                 path: "/contact",
                 element: <Contact/>
+            },
+
+            {
+                path: "*",
+                element: <NotFound/>
             },
         ],
     },
