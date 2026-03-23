@@ -53,6 +53,7 @@ import ReducerCounterObject from "./AllTopics/13_Reducer/ReducerCounterObject";
 import MemoExample from "./AllTopics/15_MemoAndCallback/MemoExample";
 import Dashboard from "./AllTopics/16_Routing/Dashboard";
 import ParentHoc from "./AllTopics/17_Hoc/ParentHoc";
+import Routing2 from "./AllTopics/16_Routing/Routing2";
 
 const App = () => {
 
@@ -127,7 +128,9 @@ const App = () => {
 
       {/* <MemoExample/> */}
 
-      <Dashboard/>
+      {/* <Dashboard/> */}
+
+       <Routing2/> 
 
       {/* <ParentHoc/>   */}
 

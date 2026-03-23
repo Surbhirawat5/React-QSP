@@ -7,14 +7,34 @@ const MemoExample = () => {
     const [minus, setMinus] = useState(100);
 
     // function multiply(){
-    //     console.log("I am multiply");
-    //     return add * 5;
+    //     console.log("I am multiply");      
     // }
 
     //! it returns Memoized value
     let multiply = useMemo(() => {
         console.log("I am multiply");
         return add * 5;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
     }, [add]);
 
      //! it returns Memoized function
