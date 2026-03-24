@@ -130,9 +130,9 @@ const App = () => {
 
       {/* <Dashboard/> */}
 
-       <Routing2/> 
+       {/* <Routing2/>  */}
 
-      {/* <ParentHoc/>   */}
+      <ParentHoc/>  
 
     </>
   );
