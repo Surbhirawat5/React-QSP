@@ -14,7 +14,7 @@ const ControlledForms1 = () => {
     };
 
     const handleForm = (e) => {
-        e.preventDefault();     // stops page reload
+        e.preventDefault();                          // stops page reload
         console.log("form submitted");  
         console.log(firstname, lastname);
         
