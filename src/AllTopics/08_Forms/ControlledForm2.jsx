@@ -18,14 +18,14 @@ const ControlledForm2 = () => {
     console.log("Form Submitted");
     console.log(formData);
 
-    //! to get existing user from local storage, if user are present Parse it else initialize with empty array []
+    //! to get existing user from local storage, if user are present Parse it else initialize with empty array [] 
     let users = JSON.parse(localStorage.getItem("users")) || []
 
 
     //! Create user data with id 
     let userData = {...formData, id: Math.random()};
 
-    //! add userData to user Array
+    //! add userData to user Array 
     users.push(userData);
 
     //! set users array to local storage after converting into json
