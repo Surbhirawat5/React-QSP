@@ -55,6 +55,7 @@ import Dashboard from "./AllTopics/16_Routing/Dashboard";
 import ParentHoc from "./AllTopics/17_Hoc/ParentHoc";
 import Routing2 from "./AllTopics/16_Routing/Routing2";
 import ReduxCounter from "./AllTopics/18_Redux/ReduxCounter";
+import VirtualisedList from "./AllTopics/19_Virtulization/VirtualisedList";
 
 const App = () => {
 
@@ -135,7 +136,9 @@ const App = () => {
 
       {/* <ParentHoc/>   */}
 
-      <ReduxCounter/>
+      {/* <ReduxCounter/> */}
+
+      <VirtualisedList/>
 
     </>
   );
