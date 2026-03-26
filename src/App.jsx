@@ -56,6 +56,7 @@ import ParentHoc from "./AllTopics/17_Hoc/ParentHoc";
 import Routing2 from "./AllTopics/16_Routing/Routing2";
 import ReduxCounter from "./AllTopics/18_Redux/ReduxCounter";
 import VirtualisedList from "./AllTopics/19_Virtulization/VirtualisedList";
+import CrudApp from "./AllTopics/20_CrudApp/CrudApp";
 
 const App = () => {
 
@@ -138,7 +139,9 @@ const App = () => {
 
       {/* <ReduxCounter/> */}
 
-      <VirtualisedList/>
+      {/* <VirtualisedList/> */}
+
+      <CrudApp/>
 
     </>
   );
