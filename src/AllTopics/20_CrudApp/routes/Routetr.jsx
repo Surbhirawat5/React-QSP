@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import Layout from "../pages/Layout";
-import Login from "../pages/Login";
-import Dashboard from "../pages/Dashboard";
+import Dashboard from "../Pages/Dashboard";
+import Login from "../Pages/Login";
+import Layout from "../Pages/Layout";
 import PrivateRoute from "./PrivateRoute";
 
 export const myRoutes = createBrowserRouter([
@@ -11,9 +11,9 @@ export const myRoutes = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: (
+        element:  (
           <PrivateRoute>
-            <Dashboard />
+            <Dashboard/>
           </PrivateRoute>
         ),
       },
