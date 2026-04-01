@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "username": "surbhi",
+      "email": "shurbhirawat43@gmail.com",
+      "password": "hajj",
+      "id": "_HIjlwnq11A"
+    },
+    {
+      "username": "surbhi404",
+      "email": "aaa@gmail.com",
+      "password": "dfgh",
+      "id": "RbinYpfO6ns"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
