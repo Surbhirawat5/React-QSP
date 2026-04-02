@@ -1,16 +1,28 @@
 {
   "users": [
     {
-      "username": "surbhi",
+      "username": "Surbhi Rawat",
       "email": "shurbhirawat43@gmail.com",
       "password": "hajj",
       "id": "_HIjlwnq11A"
     },
     {
       "username": "surbhi404",
-      "email": "aaa@gmail.com",
+      "email": "subhi@gmail.com",
       "password": "dfgh",
       "id": "RbinYpfO6ns"
+    },
+    {
+      "username": "Aaditya",
+      "email": "aaa@gmail.com",
+      "password": "fghjk",
+      "id": "Z4-gSIYVzWA"
+    },
+    {
+      "username": "Aadhya ",
+      "email": "adu@gmail.com",
+      "password": "2345678",
+      "id": "aOf9gBVC_bY"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

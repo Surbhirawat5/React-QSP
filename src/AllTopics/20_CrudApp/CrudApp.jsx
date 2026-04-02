@@ -1,5 +1,5 @@
 import { RouterProvider} from 'react-router-dom'
-import { myRoutes } from './routes/Routetr';
+import { myRoutes } from './routes/Router';
 
 
 const CrudApp = () => {

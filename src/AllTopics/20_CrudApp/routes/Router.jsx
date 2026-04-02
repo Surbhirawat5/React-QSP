@@ -1,10 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
-import Layout from "../pages/Layout";
-import Login from "../pages/Login";
-import Dashboard from "../Pages/Dashboard";
+import Layout from "../Pages/Layout";
+import Login from "../Pages/Login";
+import Dashboard from "../pages/Dashboard";
 import PrivateRoute from "./PrivateRoute";
 import CreateUserPage from "../Pages/CreateUserPage";
 import AllUsersPage from "../Pages/AllUsersPage";
+import EditUserPage from "../Pages/EditUserPage";
 
 export const myRoutes = createBrowserRouter([
   {
@@ -39,6 +40,15 @@ export const myRoutes = createBrowserRouter([
           </PrivateRoute>
         ),
       },
+      {
+        path: "/edit-user/:id", // dynamic route
+        element: (
+          <PrivateRoute>
+            <EditUserPage />
+          </PrivateRoute>
+        ),
+      },
+      
     ],
   },
 ]);

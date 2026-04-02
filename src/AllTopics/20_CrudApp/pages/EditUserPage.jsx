@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
 
-const CreateUserPage = () => {
+const EditUserPage = () => {
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -16,30 +16,47 @@ const CreateUserPage = () => {
   };
 
   const navigate = useNavigate();
+  const params = useParams();
 
-  const handleCreateUser = async (e) => {
+  async function getEditUser() {
+    try {
+      let resp = await axios.get(`http://localhost:9000/users/${params.id}`);
+      console.log(resp);
+      setFormData(resp.data);
+    } catch (error) {
+      console.log(error);
+      toast.error("something went wrong");
+    }
+  }
+
+  useEffect(() => {
+    getEditUser();
+  }, []);
+
+  const handleUpdateUser = async (e) => {
     e.preventDefault();
     console.log(formData);
     try {
-      //! USING AXIOS
-      let resp = await axios.post("http://localhost:9000/users", formData);
-      console.log(resp);
-      toast.success("User Created");
+      let res = await axios.put(
+        `http://localhost:9000/users/${params.id}`,
+        formData,
+      );
+      toast.success("User updated");
       navigate("/all-users");
     } catch (error) {
       console.log(error);
-      toast.error("Unable to create");
+      toast.error("Unable to update");
     }
   };
 
   return (
     <section className="pt-20 px-4 min-h-screen bg-gray-100">
       <header>
-        <h1 className="text-4xl font-bold text-center items-center m-5">Create User Form</h1>
+        <h1 className="text-4xl font-bold text-center items-center m-5">Edit User</h1>
       </header>
 
       <article className="border-2 rounded-2xl p-4 flex flex-col items-center justify-center min-h-4 w-95">
-        <form>
+        <form onSubmit={handleUpdateUser}>
           <div>
             <label htmlFor="username" className="font-bold rounded">Username : </label>
             <input
@@ -76,10 +93,8 @@ const CreateUserPage = () => {
               className="ps-2 pe-2 m-2 border rounded"
             />
           </div>
-          <div className="text-center">
-            <button type="button" onClick={handleCreateUser} className="ps-3 pe-3 mx-1 my-1 border rounded font-bold">
-              Create
-            </button>
+          <div>
+            <button className="ps-3 pe-3 mx-1 my-1 border rounded font-bold">Update</button>
           </div>
         </form>
       </article>
@@ -87,4 +102,4 @@ const CreateUserPage = () => {
   );
 };
 
-export default CreateUserPage;
+export default EditUserPage;
