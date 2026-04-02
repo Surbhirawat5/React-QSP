@@ -62,7 +62,7 @@ const Dashboard = () => {
                         className="border-b hover:bg-gray-50 transition"
                       >
                         <td className="p-3 font-medium text-gray-700">
-                          #{item.id}
+                          {item.id}
                         </td>
                         <td className="p-3 text-gray-800">{item.title}</td>
                         <td className="p-3 text-blue-600 font-semibold">
