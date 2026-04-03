@@ -57,6 +57,7 @@ import Routing2 from "./AllTopics/16_Routing/Routing2";
 import ReduxCounter from "./AllTopics/18_Redux/ReduxCounter";
 import VirtualisedList from "./AllTopics/19_Virtulization/VirtualisedList";
 import CrudApp from "./AllTopics/20_CrudApp/CrudApp";
+import ErrorCounter from "./AllTopics/22_ErrorBoundary/Counter";
 
 const App = () => {
 
@@ -141,7 +142,9 @@ const App = () => {
 
       {/* <VirtualisedList/> */}
 
-      <CrudApp/>
+      {/* <CrudApp/> */}
+
+      <ErrorCounter/>
 
     </>
   );

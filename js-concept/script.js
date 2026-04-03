@@ -51,7 +51,7 @@ const msgWithSlowMode = throttledMsg(sendMsg, 5000);
 
 
 msgWithSlowMode("Hii");
-// msgWithSlowMode("Big fan");
-// msgWithSlowMode("Hello world");
-// msgWithSlowMode("Learn react");
-// msgWithSlowMode("React is easy🔝");
+msgWithSlowMode("Big fan");
+msgWithSlowMode("Hello world");
+msgWithSlowMode("Learn react");
+msgWithSlowMode("React is easy🔝");
