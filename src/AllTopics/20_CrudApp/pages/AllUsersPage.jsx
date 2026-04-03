@@ -42,7 +42,7 @@ const AllUsersPage = () => {
   }, []);
 
   if (loading) {
-    return <Loader />;
+    return <Loader/>;
   }
 
   return (
@@ -55,7 +55,7 @@ const AllUsersPage = () => {
         allUsers.map((user) => {
           return (
             <div key={user.id} className="border-2 rounded-2xl p-4 flex flex-col items-center justify-center min-h-4 w-95 m-4">
-              <p className="p-1 ">
+              <p className="p-1">
                 <strong>Username :  </strong>
                 {user.username}
               </p>

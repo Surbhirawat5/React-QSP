@@ -1,23 +1,57 @@
-function debounceSearch(fn, delay = 500) {
-  let timer;
+//! DEBOUNCING
 
-  return (...args) => {
-    clearTimeout(timer);
+// function debounceSearch(fn, delay = 500) {
+//   let timer;
 
-    timer = setTimeout(() => {
+//   return (...args) => {
+//     clearTimeout(timer);
+
+//     timer = setTimeout(() => {
+//       fn(...args);
+//     }, delay);
+//   };
+// }
+
+// function searchQuery(query) {
+//   console.log(query);
+// }
+
+// let debouncedSearch = debounceSearch(searchQuery, 5000);
+
+// debouncedSearch("H");
+// debouncedSearch("He");
+// debouncedSearch("Hel");
+// debouncedSearch("Hell");
+// debouncedSearch("Hello");
+
+//! THROTTLING
+
+function throttledMsg(fn, delay = 2000) {
+  let flag = true;
+  return function (...args) {
+    if (flag){
       fn(...args);
+      flag = false;
+    }
+
+    setTimeout(() => {
+      flag = true
+      console.log("send another msg");
     }, delay);
+
   };
 }
 
-function searchQuery(query) {
-  console.log(query);
+
+function sendMsg(message) {
+  console.log(`Sending...`, message);
 }
 
-let debouncedSearch = debounceSearch(searchQuery, 5000);
+const msgWithSlowMode = throttledMsg(sendMsg, 5000);
 
-debouncedSearch("H");
-debouncedSearch("He");
-debouncedSearch("Hel");
-debouncedSearch("Hell");
-debouncedSearch("Hello");
+
+msgWithSlowMode("Hii");
+// msgWithSlowMode("Big fan");
+// msgWithSlowMode("Hello world");
+// msgWithSlowMode("Learn react");
+// msgWithSlowMode("React is easy🔝");
