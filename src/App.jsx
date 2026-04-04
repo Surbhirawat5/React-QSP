@@ -147,7 +147,7 @@ const App = () => {
 
       <ErrorBoundaryCBC>
         <ErrorCounter/>
-        </ErrorBoundaryCBC>  
+      </ErrorBoundaryCBC>  
       
     </>
   );
