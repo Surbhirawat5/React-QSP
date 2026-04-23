@@ -143,11 +143,11 @@ const App = () => {
 
       {/* <VirtualisedList/> */}
 
-      {/* <CrudApp/> */}
+      <CrudApp/>
 
-      <ErrorBoundaryCBC>
+      {/* <ErrorBoundaryCBC>
         <ErrorCounter/>
-      </ErrorBoundaryCBC>  
+      </ErrorBoundaryCBC>   */}
       
     </>
   );
